@@ -1,0 +1,19 @@
+{
+  "name": "book",
+  "version": "1.0.0",
+  "description": "book shop online",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "xsannie",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-preset-es2015": "^6.24.1",
+    "browserify": "^14.4.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-uglify": "^3.0.0"
+  }
+}

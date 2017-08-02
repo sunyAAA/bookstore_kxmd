@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="dist/css/reset.css">
+    <link rel="stylesheet" href="dist/css/common.css">
+    <title>Title</title>
+</head>
+<body>
+<div id="header">
+    <div class="navbar">
+        <div class="container">
+            <img src="dist/img/logo.png" class="pull-left brand">
+            <ul class="header-list pull-left">
+                <li class="active"><a href="#">商城首页</a></li>
+                <li><a href="#">全部分类</a></li>
+                <li><a href="#">文艺</a></li>
+                <li><a href="#">生活</a></li>
+                <li><a href="#">科技</a></li>
+                <li><a href="#">电子书</a></li>
+                <li><a href="#">论坛</a></li>
+            </ul>
+            <ul class="header-icon">
+                <li>
+                    <button type="button" class="search"></button>
+                </li>
+                <li class="login-group">
+                    <a href="#" class="login"></a>
+                    <div class="login-collapse" tabindex="-1">
+                        <span class="triangle"></span>
+                        <form id="login-form">
+                            <h3>欢迎登录！</h3>
+                            <p>还有没有帐号?<a id="goReg" href="#">马上注册>></a></p>
+                            <div class="form-group">
+                                <label for="uname" class="control-label">用户名：</label>
+                                <input name="uname" id="uname" type="text" class="from-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="upwd" class="control-label">密码：</label>
+                                <input name="upwd" id="upwd" type="password" class="from-control">
+                            </div>
+                            <div class="check-box">
+                                <div class="check-btn" id="dragEle"></div>
+                                <div class="tips">>>拖动滑块完成验证<<</div>
+                            </div>
+                            <div class="form-btn">
+                                <button class="btn-disabled" id="login-submit" disabled>提交</button>
+                            </div>
+                            <div class="form-info">
+                                <p>用户名或密码无效，请重新输入</p>
+                            </div>
+                        </form>
+                        <div class="wc-box">
+                            <h3>欢迎回来： <span class="wc-name">guagua</span> .</h3>
+                                <ul>
+                                    <li><a href="#"><span></span>个人中心</a></li>
+                                    <li><a href="#"><span class="icon-order"></span>我的订单</a></li>
+                                    <li><a href="#"><span class="icon-like"></span>我的收藏</a></li>
+                                    <li><a href="#"><span class="icon-msg"></span>我的消息</a></li>
+                                </ul>
+                                <div class="logo-group">
+                                    <img src="dist/img/reg-logo.png" alt="">
+                                    <img src="dist/img/reg-logo2.png" alt="">
+                                </div>
+                            <p class="quit"><a href="#">退出登录</a></p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="search-form" style="visibility: hidden;">
+                <form action="">
+                    <input type="text" placeholder="请输入搜索内容">
+                </form>
+                <ul id="suggest" class="default">
+                    <!--<li>-->
+                        <!--<img src="img/art-5.jpg" alt="">-->
+                        <!--<span><b>月亮的女儿</b>LUNA FOREVER</span>-->
+                    <!--</li>-->
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="logo">
+        <div class="container">
+            <p><img src="dist/img/title.png" alt=""></p>
+            <div class="promise">
+                <ul class="list-center">
+                    <li><a class="real" href="#"><span>正版图书</span></a></li>
+                    <li><a class="best" href="#"><span>优质服务</span></a></li>
+                    <li><a class="post" href="#"><span>满68包邮</span></a></li>
+                </ul>
+                <ul class="list-right">
+                    <li><a class="helper" href="#"><span>帮助中心</span></a></li>
+                    <li><a class="cart" href="#"><span>购物车</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="main">
+    <div class="container">
+        <!--轮播图-->
+        <div class="banner">
+            <div class="carousel">
+                <ul>
+                    <li class="item active"><img src="dist/img/banner1.jpg" alt=""></li>
+                    <li class="item"><img src="dist/img/banner2.jpg" alt=""></li>
+                    <li class="item"><img src="dist/img/banner3.jpg" alt=""></li>
+                    <li class="item"><img src="dist/img/banner4.jpg" alt=""></li>
+                    <li class="item"><img src="dist/img/banner5.jpg" alt=""></li>
+                    <li class="item"><img src="dist/img/banner6.jpg" alt=""></li>
+                </ul>
+            </div>
+            <div class="banner-ctrl">
+                <ul>
+                    <li class="in"><span></span></li>
+                    <li><span></span></li>
+                    <li><span></span></li>
+                    <li><span></span></li>
+                    <li><span></span></li>
+                    <li><span></span></li>
+                </ul>
+            </div>
+        </div>
+        <!--新书速递-->
+        <div id="book-new">
+            <h3>新书速递</h3>
+            <div class="book-container">
+                <!--橱窗-->
+                <div class="middle">
+                    <ul>
+                        <li>
+                            <a href=""><img src="dist/img/1.png" alt=""></a>
+                            <div class="outer">
+                                <div class="p-name">知更鸟</div>
+                                <div class="p-price">￥45.00</div>
+                            </div>
+                            <div class="inner">
+                                <div class="btn-group">
+                                    <a href="#">查看详情</a>
+                                    <button class="a-add">加入购物车</button>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!--右侧热销排行-->
+                <div class="right">
+                    <div class="book-hot">
+                        <ul class="hot-content">
+                            <li class="hot-item active">
+                                <span>01</span>
+                                <p>你的名字</p>
+                                <div class="detail">
+                                    <div class="p-img">
+                                        <a href="#"><img src="dist/img/2.png" alt=""></a>
+                                    </div>
+                                    <div class="p-msg">
+                                        <div class="p-name">
+                                            <a href="#">你的名字</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="hot-item">
+                                <i></i>
+                                <span>01</span>
+                                <p>你的名字</p>
+                                <div class="detail">
+                                    <div class="p-img">
+                                        <a href="#"><img src="dist/img/2.png" alt=""></a>
+                                    </div>
+                                    <div class="p-msg">
+                                        <div class="p-name">
+                                            <a href="#">你的名字</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="hot-item">
+                                <i></i>
+                                <span>01</span>
+                                <p>你的名字</p>
+                                <div class="detail">
+                                    <div class="p-img">
+                                        <a href="#"><img src="dist/img/2.png" alt=""></a>
+                                    </div>
+                                    <div class="p-msg">
+                                        <div class="p-name">
+                                            <a href="#">你的名字</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="hot-item">
+                                <i></i>
+                                <span>01</span>
+                                <p>你的名字</p>
+                                <div class="detail">
+                                    <div class="p-img">
+                                        <a href="#"><img src="dist/img/2.png" alt=""></a>
+                                    </div>
+                                    <div class="p-msg">
+                                        <div class="p-name">
+                                            <a href="#">你的名字</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="hot-item">
+                                <i></i>
+                                <span>01</span>
+                                <p>你的名字</p>
+                                <div class="detail">
+                                    <div class="p-img">
+                                        <a href="#"><img src="dist/img/2.png" alt=""></a>
+                                    </div>
+                                    <div class="p-msg">
+                                        <div class="p-name">
+                                            <a href="#">你的名字</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="hot-item">
+                                <i></i>
+                                <span>01</span>
+                                <p>你的名字</p>
+                                <div class="detail">
+                                    <div class="p-img">
+                                        <a href="#"><img src="dist/img/2.png" alt=""></a>
+                                    </div>
+                                    <div class="p-msg">
+                                        <div class="p-name">
+                                            <a href="#">你的名字</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="hot-item">
+                                <i></i>
+                                <span>01</span>
+                                <p>你的名字</p>
+                                <div class="detail">
+                                    <div class="p-img">
+                                        <a href="#"><img src="dist/img/2.png" alt=""></a>
+                                    </div>
+                                    <div class="p-msg">
+                                        <div class="p-name">
+                                            <a href="#">你的名字</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="hot-item">
+                                <i></i>
+                                <span>01</span>
+                                <p>你的名字</p>
+                                <div class="detail">
+                                    <div class="p-img">
+                                        <a href="#"><img src="dist/img/2.png" alt=""></a>
+                                    </div>
+                                    <div class="p-msg">
+                                        <div class="p-name">
+                                            <a href="#">你的名字</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="hot-item">
+                                <i></i>
+                                <span>01</span>
+                                <p>你的名字</p>
+                                <div class="detail">
+                                    <div class="p-img">
+                                        <a href="#"><img src="dist/img/2.png" alt=""></a>
+                                    </div>
+                                    <div class="p-msg">
+                                        <div class="p-name">
+                                            <a href="#">你的名字</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="hot-item">
+                                <i></i>
+                                <span>01</span>
+                                <p>你的名字</p>
+                                <div class="detail">
+                                    <div class="p-img">
+                                        <a href="#"><img src="dist/img/2.png" alt=""></a>
+                                    </div>
+                                    <div class="p-msg">
+                                        <div class="p-name">
+                                            <a href="#">你的名字</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--精彩小说-->
+        <div id="book-wonder">
+            <h3>精彩小说</h3>
+            <div class="book-container">
+                <!--左侧海报-->
+                <div class="left">
+                    <img src="dist/img/banner-md01.png" alt="">
+                </div>
+                <div class="middle">
+                    <ul>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--文艺-->
+        <div id="book-art">
+            <h3>文艺</h3>
+            <div class="book-container">
+                <div class="middle">
+                    <ul>
+
+                    </ul>
+                </div>
+                <!--右侧海报-->
+                <div class="right">
+                    <img src="dist/img/banner-md02.png" alt="">
+                </div>
+            </div>
+        </div>
+        <!--社会科学-->
+        <div id="book-"></div>
+    </div>
+</div>
+<div id="footer">
+    <div class="container">
+        <div class="footer-cl">
+            <ul>
+                <li class="cl-item "><a href="#"><b class="b1"></b>正版图书</a></li>
+                <li class="cl-item "><a href="#"><b class="b3"></b>优质服务</a></li>
+                <li class="cl-item "><a href="#"><b class="b2"></b>满68包邮</a></li>
+            </ul>
+        </div>
+        <div class="path"></div>
+        <div class="footer-directory">
+            <ul class="directory-list">
+                <li>
+                    <dl>
+                        <dt><b></b>购买流程</dt>
+                        <dd><a href="#" target="_blank">支付宝支付</a></dd>
+                        <dd><a href="#" target="_blank"> 发票说明</a></dd>
+                        <dd><a href="#" target="_blank">优惠券说明</a></dd>
+                        <dd><a href="#" target="_blank">花呗分期</a></dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt><b>配送方式</b></dt>
+                        <dd><a href="#">运输物流</a></dd>
+                        <dd><a href="#">配送费用</a></dd>
+                        <dd><a href="#">签收须知</a></dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt><b>服务支持</b></dt>
+                        <dd><a href="#">服务保证</a></dd>
+                        <dd><a href="#">售后服务</a></dd>
+                        <dd><a href="#">实体店服务</a></dd>
+                        <dd><a href="#">退换货支持</a></dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt><b>品牌服务</b></dt>
+                        <dd><a href="#">常见问题</a></dd>
+                        <dd><a href="#">相关资料</a></dd>
+                        <dd><a href="#">联系我们</a></dd>
+                    </dl>
+                </li>
+            </ul>
+            <ul class="directory-phone">
+                <li>
+                    <dl class="shop-help-last">
+                        <dt class="f-d-title"><b class="b5"></b>店小二在线时段</dt>
+                        <dd>周一至周五 08:00-21:00</dd>
+                        <dd>周六、周日 09:00-18:00</dd>
+                    </dl>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<ul id="slide-bar">
+    <li class="shopcart">
+        <span class="count">10</span>
+        <div class="prompt">
+            <span class="triangle"></span>
+            购物车
+        </div>
+        <div class="cart-detail">
+            <span class="triangle"></span>
+            <ul class="CS-content">
+
+            </ul>
+            <div class="result">
+
+            </div>
+        </div>
+    </li>
+    <li class="service">
+        <a id="J_online-service" target="_blank"
+           href="http://crm2.qq.com/page/portalpage/wpa.php?uin=672101638&amp;aty=0&amp;a=0&amp;curl=&amp;ty=1"></a>
+        <div class="prompt"><span class="triangle"></span>在线客服</div>
+    </li>
+    <li class="backtop" style="display: none">
+        <div class="prompt"><span class="triangle"></span>返回顶部</div>
+    </li>
+</ul>
+<div class="modal">
+    <div class="container">
+        <div class="modal-dialog">
+            <div id="modal-content">
+                <div class="modal-header">
+                    <h3>欢迎注册！</h3>
+                </div>
+                <div class="container-fluid">
+                    <div class="modal-body">
+                        <form id="reg-form">
+                            <div class="form-group">
+                                <label for="reg-name" class="control-label">用户名：</label>
+                                <input name="reg-name" id="reg-name" type="text"
+                                       class="from-control"
+                                       maxlength="12" placeholder="用户名为6到12位英文或数字的组合">
+                                <span>请输入6到12位英文或数字的组合</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="reg-pwd" class="control-label">密码：</label>
+                                <input name="reg-pwd" id="reg-pwd" type="password"
+                                       class="from-control" placeholder="密码长度不得少于8位">
+                                <span>密码长度不得少于8位</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="re-pwd" class="control-label">确认密码：</label>
+                                <input name="re-pwd" id="re-pwd" type="password"
+                                       class="from-control" placeholder="请再次输入密码">
+                                <span>两次密码输入不一致</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="reg-email" class="control-label">邮箱：</label>
+                                <input name="reg-email" id="reg-email" type="text"
+                                       class="from-control" placeholder="请输入您的邮箱">
+                                <span >邮箱格式错误</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="reg-phone" class="control-label">手机号：</label>
+                                <input name="reg-phone" id="reg-phone" type="text"
+                                       class="from-control" placeholder="请输入您的手机号">
+                                <span >手机号格式错误</span>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label"> </label>
+                                <button title="以上内容均必填项" id="reg-submit" class="btn-disabled"
+                                        disabled>注册
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="reg-logo">
+                        <img src="dist/img/reg-logo.png" alt="">
+                        <img src="dist/img/reg-logo2.png" alt="">
+                    </div>
+
+                </div>
+
+            </div>
+            <div id="book-detail">
+
+            </div>
+        </div>
+    </div>
+</div>
+<script src="dist/js/jquery-1.11.3.js"></script>
+<script src="dist/js/fly.js"></script>
+<script src="dist/js/index.js"></script>
+</body>
+</html>
