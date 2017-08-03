@@ -1,5 +1,5 @@
 /**
- * Created by xsann on 2017/8/3.
+ * Created by xsann on 2017/7/23.
  */
 //导入工具包 require('node_modules里对应模块')
 var gulp = require('gulp'), //本地安装gulp所用到的地方
